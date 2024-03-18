@@ -3,22 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E0F7FA"
     tools:context=".Exercice5">
 
-    <!-- Juste une vue vide pour détecter les secousses -->
+    <!-- View for shake detection -->
     <View
         android:id="@+id/shake_detector"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent"/>
+        android:background="@android:color/transparent" />
+
+    <!-- Button to start Exercise 6 -->
     <Button
         android:id="@+id/btnExercise4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exercice 6"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
+        android:text="Start Exercise 6"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
         android:onClick="startExercise6" />
+
+    <!-- Text for flash instruction -->
+    <TextView
+        android:id="@+id/flash_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Move your phone to turn on the flash"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@id/btnExercise4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>
